@@ -171,22 +171,87 @@
         width: 100%;
         max-width: 600px;
         height: 80vh;
-        padding: 45px;
         border: 1px solid white;
         overflow-y: auto;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .info-modal-hero-wrap {
+        position: relative;
+        flex-shrink: 0;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .info-modal-hero {
+        display: block;
+        width: 100%;
+      }
+
+      .info-modal-hero-caption {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        max-width: 200px;
+        line-height: 1.5em;
+        text-align: right;
+        padding: 6px 10px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        font-size: 0.75em;
+        color: #ccc;
+      }
+
+      .info-modal-row {
+        margin-top: -275px;
+      }
+
+      .info-modal-body {
+        position: relative;
+        padding: 15px 45px 45px 45px;
+        width: 90%;
+      }
+
+      .info-modal-content h2,
+      .info-modal-content h3 {
+        display: inline-block;
+        font-weight: 400;
+        margin-bottom: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 4px 10px;
       }
 
       .info-modal-content h2 {
         font-size: 1.5em;
-        font-weight: 400;
-        margin-bottom: 10px;
+        max-width: 50%;
+      }
+
+      .info-modal-content h3 {
+        font-size: 1.1em;
       }
 
       .info-modal-content p,
       .info-modal-content ul {
+        display: inline-block;
         font-size: 1em;
         line-height: 1.5em;
         margin: 10px 0px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 4px 10px;
+      }
+
+      .info-modal-content p:nth-of-type(1),
+      .info-modal-content p:nth-of-type(2) {
+        display: block;
+        max-width: 50%;
       }
 
       .info-modal-content li {
@@ -217,18 +282,21 @@
       .info-modal-close {
         position: absolute;
         top: 15px;
-        right: 15px;
+        left: 15px;
         font-size: 1.5em;
         color: #fff;
         cursor: pointer;
         user-select: none;
         padding: 5px 10px;
+        z-index: 10;
       }
 
       @media (max-width: 950px) {
         .info-modal-close {
           top: auto;
+          left: auto;
           bottom: 15px;
+          right: 15px;
         }
       }
 
@@ -368,6 +436,12 @@
       .photo-grid.hide-for-modal {
         visibility: hidden;
       }
+
+      /*@media (min-width: 1300px) {
+        .photo-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }*/
 
       @media (max-width: 950px) {
         .photo-grid {
@@ -693,10 +767,18 @@
 
     <!-- Info Modal -->
     <div id="infoModal" class="info-modal">
-      <div class="info-modal-content glass-box">
+      <div class="info-modal-content">
         <div class="info-modal-close" onclick="closeInfoModal()">×</div>
-        <div class="info-modal-text" id="infoModalText">
-          sample text goes here
+        <div class="info-modal-hero-wrap">
+          <img class="info-modal-hero" src="https://live.staticflickr.com/65535/53940447977_2095b0935c_b.jpg" alt="" />
+          <div class="info-modal-hero-caption">Self-portrait in downtown Portland, Oregon, 2025</div>
+        </div>
+        <div class="info-modal-row">
+          <div class="info-modal-body">
+            <div class="info-modal-text" id="infoModalText">
+              sample text goes here
+            </div>
+          </div>
         </div>
       </div>
     </div>
