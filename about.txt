@@ -4,8 +4,8 @@
 <p>Photos made in Portland, OR, USA and beyonda...</p>
 <p>All photos are my original work and © BRENNEN F</p>
 
-<h3>You Should Own Your Own Gallery</h3>
-<p>The problem solved here is now you're not looking at insta.</p>
+<p>The problem solved here is now you're not looking at insta. You Should Own Your Own Gallery.</p>
+
 <p>Gallery tips: Select one and then use swipes or arrow keys to navigate through a randomized pool of recent work.</p>
 
 <p>Also ... </p>
@@ -15,6 +15,6 @@
     <li>Hide/show UI with up/down arrows or swipes</li>
 </ul>
 
-<p>
-<a href="https://www.flickr.com/photos/brennenf" target="_blank">@brennenf on Flickr</a> and <a href="https://discord.com/users/brennenf" target="_blank">@brennenf on Discord too</a>
+<p>Find me: 
+<a href="https://www.flickr.com/photos/brennenf" target="_blank">@brennenf on Flickr</a> and <a href="https://discord.com/users/brennenf" target="_blank">@brennenf on Discord, too</a>
 </p>
